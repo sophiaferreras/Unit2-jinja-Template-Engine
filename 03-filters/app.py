@@ -59,10 +59,10 @@ def statistics():
     students = read_roster()
     # calculate stats
     total = len(students)
-    seniors = [s for s in students if s['Grade']==12]
-    juniors = [s for s in students if s['Grade']==11]
-    sophomores = [s for s in students if s['Grade']==10]
-    freshmen = [s for s in students if s['Grade']==9]
+    seniors = [s for s in students if s['Grade']=='12']
+    juniors = [s for s in students if s['Grade']=='11']
+    sophomores = [s for s in students if s['Grade']=='10']
+    freshmen = [s for s in students if s['Grade']=='9']
     males = [s for s in students if s['Gender'] == 'M']
     females = [s for s in students if s['Gender'] == 'F']
 
