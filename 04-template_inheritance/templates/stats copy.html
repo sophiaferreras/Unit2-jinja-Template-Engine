@@ -1,0 +1,35 @@
+
+        <h1>Class Statistics - Advanced Programming </h1>
+        {#summary stats using filters#}
+        <div class="stat-card">
+            <h3>Enrollment Summary:</h3>
+            <p class="stat-number">
+                <span class="stat-number">{{total}}</span>
+                total students enrolled
+            </p>
+        </div>
+        {#Grade level distribution#}
+        <h2>Grade Level Distribution</h2>
+        <div class="grid">
+            <div class="stat-card">
+                <h3>Seniors(Grade 12)</h3>
+                <p class="stat-number">{{seniors|length}}</p>
+                <p class="percentage">
+                    {{(seniors|length/total * 100|round(1))}}%
+                </p>
+            </div>
+            <div class="stat-card">
+                <h3>Juniors(Grade 11)</h3>
+                <p class="stat-number">{{juniors|length}}</p>
+                <p class="percentage">
+                    {{(juniors|length/total * 100|round(1))}}%
+                </p>
+            </div>
+            <div class="stat-card">
+                <h3>Sophomores(Grade 10)</h3>
+                <p class="stat-number">{{sophomores|length}}</p>
+                <p class="percentage">
+                    {{(sophomores|length/total * 100|round(1))}}%
+                </p>
+            </div>
+       
